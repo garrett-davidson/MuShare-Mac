@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D35D400184B74EC00F6B388 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D35D3FF184B74EC00F6B388 /* Song.m */; };
+		0D36018E1846295400F1D57D /* LibraryManagerWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D36018C1846295400F1D57D /* LibraryManagerWindowController.m */; };
+		0D5E2D1A184BBB9C008DB7CD /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5E2D19184BBB9C008DB7CD /* ScriptingBridge.framework */; };
+		0D8FD7AE1849CF490067F5A9 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8FD7AC1849CF490067F5A9 /* PreferencesWindowController.m */; };
+		0D8FD7AF1849CF490067F5A9 /* PreferencesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D8FD7AD1849CF490067F5A9 /* PreferencesWindowController.xib */; };
 		0DF8F39218461E8800D91699 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF8F39118461E8800D91699 /* Cocoa.framework */; };
 		0DF8F39C18461E8800D91699 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DF8F39A18461E8800D91699 /* InfoPlist.strings */; };
 		0DF8F39E18461E8800D91699 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF8F39D18461E8800D91699 /* main.m */; };
@@ -32,6 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D35D3FE184B74EC00F6B388 /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
+		0D35D3FF184B74EC00F6B388 /* Song.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
+		0D35D402184BB03900F6B388 /* iTunes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunes.h; sourceTree = "<group>"; };
+		0D36018B1846295400F1D57D /* LibraryManagerWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LibraryManagerWindowController.h; path = ../LibraryManagerWindowController.h; sourceTree = "<group>"; };
+		0D36018C1846295400F1D57D /* LibraryManagerWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LibraryManagerWindowController.m; path = ../LibraryManagerWindowController.m; sourceTree = "<group>"; };
+		0D5E2D19184BBB9C008DB7CD /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		0D8FD7AB1849CF490067F5A9 /* PreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesWindowController.h; sourceTree = "<group>"; };
+		0D8FD7AC1849CF490067F5A9 /* PreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesWindowController.m; sourceTree = "<group>"; };
+		0D8FD7AD1849CF490067F5A9 /* PreferencesWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindowController.xib; sourceTree = "<group>"; };
 		0DF8F38E18461E8800D91699 /* MuShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DF8F39118461E8800D91699 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0DF8F39418461E8800D91699 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -59,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D5E2D1A184BBB9C008DB7CD /* ScriptingBridge.framework in Frameworks */,
 				0DF8F39218461E8800D91699 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +112,7 @@
 		0DF8F39018461E8800D91699 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0D5E2D19184BBB9C008DB7CD /* ScriptingBridge.framework */,
 				0DF8F39118461E8800D91699 /* Cocoa.framework */,
 				0DF8F3B318461E8800D91699 /* XCTest.framework */,
 				0DF8F39318461E8800D91699 /* Other Frameworks */,
@@ -117,9 +133,17 @@
 		0DF8F39718461E8800D91699 /* MuShare */ = {
 			isa = PBXGroup;
 			children = (
+				0D35D402184BB03900F6B388 /* iTunes.h */,
 				0DF8F3A318461E8800D91699 /* AppDelegate.h */,
 				0DF8F3A418461E8800D91699 /* AppDelegate.m */,
 				0DF8F3A618461E8800D91699 /* MainMenu.xib */,
+				0D36018B1846295400F1D57D /* LibraryManagerWindowController.h */,
+				0D36018C1846295400F1D57D /* LibraryManagerWindowController.m */,
+				0D35D3FE184B74EC00F6B388 /* Song.h */,
+				0D35D3FF184B74EC00F6B388 /* Song.m */,
+				0D8FD7AB1849CF490067F5A9 /* PreferencesWindowController.h */,
+				0D8FD7AC1849CF490067F5A9 /* PreferencesWindowController.m */,
+				0D8FD7AD1849CF490067F5A9 /* PreferencesWindowController.xib */,
 				0DF8F3AC18461E8800D91699 /* Images.xcassets */,
 				0DF8F3A918461E8800D91699 /* MuShare.xcdatamodeld */,
 				0DF8F39818461E8800D91699 /* Supporting Files */,
@@ -236,6 +260,7 @@
 				0DF8F39C18461E8800D91699 /* InfoPlist.strings in Resources */,
 				0DF8F3AD18461E8800D91699 /* Images.xcassets in Resources */,
 				0DF8F3A218461E8800D91699 /* Credits.rtf in Resources */,
+				0D8FD7AF1849CF490067F5A9 /* PreferencesWindowController.xib in Resources */,
 				0DF8F3A818461E8800D91699 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,8 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D35D400184B74EC00F6B388 /* Song.m in Sources */,
 				0DF8F3AB18461E8800D91699 /* MuShare.xcdatamodeld in Sources */,
 				0DF8F3A518461E8800D91699 /* AppDelegate.m in Sources */,
+				0D8FD7AE1849CF490067F5A9 /* PreferencesWindowController.m in Sources */,
+				0D36018E1846295400F1D57D /* LibraryManagerWindowController.m in Sources */,
 				0DF8F39E18461E8800D91699 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,6 +496,7 @@
 				0DF8F3C418461E8800D91699 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DF8F3C518461E8800D91699 /* Build configuration list for PBXNativeTarget "MuShareTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +505,7 @@
 				0DF8F3C718461E8800D91699 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
