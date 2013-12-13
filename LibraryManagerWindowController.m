@@ -21,6 +21,7 @@
 @interface LibraryManagerWindowController ()
 @property (weak) IBOutlet NSOutlineView *outlineView;
 @property (weak) IBOutlet NSTableView *tableView;
+@property (weak) IBOutlet NSTableColumn *syncColumn;
 
 @end
 
@@ -170,7 +171,7 @@
     [self startSync:nil];
 }
 
-#pragma Table View
+#pragma mark Table View
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
 {
@@ -367,13 +368,21 @@
     return false;
 }
 
-- (BOOL)checkForReceivedFiles
-{
-    //TODO
-    //watch for full files vs partials
-    return true;
-}
+- (IBAction)syncAllFiles:(id)sender {
+    for (int i = 0; i < [self numberOfRowsInTableView:self.tableView]; i++)
+    {
+        NSCell *cell3 = [self.tableView preparedCellAtColumn:0 row:i];
 
+        if (!cell3.state)
+        {
+            [self tableView:self.tableView setObjectValue:[NSNumber numberWithBool:true] forTableColumn:self.syncColumn row:i];
+        }
+    }
+
+    [self.tableView setNeedsDisplay];
+
+    [self startSync:nil];
+}
 
 - (void)addToItunes:(NSURL *)songURL
 {

@@ -724,7 +724,7 @@
                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </clipView>
                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="dzT-Hx-gfO">
-                            <rect key="frame" x="1" y="286" width="545" height="16"/>
+                            <rect key="frame" x="1" y="1" width="0.0" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="Xa3-GX-Yvw">
@@ -748,7 +748,7 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ll5-4q-SfV">
-                        <rect key="frame" x="178" y="24" width="102" height="32"/>
+                        <rect key="frame" x="635" y="13" width="102" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Start Sync" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="J8S-Xu-ObE">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -756,6 +756,17 @@
                         </buttonCell>
                         <connections>
                             <action selector="startSync:" target="iUj-Pp-gNf" id="Qch-Fj-mrM"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DE6-NQ-HvH">
+                        <rect key="frame" x="178" y="13" width="90" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Sync All" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rqg-lH-35N">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="syncAllFiles:" target="iUj-Pp-gNf" id="nWn-JR-htm"/>
                         </connections>
                     </button>
                 </subviews>
@@ -769,6 +780,7 @@
         <customObject id="iUj-Pp-gNf" customClass="LibraryManagerWindowController">
             <connections>
                 <outlet property="outlineView" destination="Icc-YU-Q5B" id="ox3-DB-N8q"/>
+                <outlet property="syncColumn" destination="FiK-Gc-pdj" id="cg3-hR-zAe"/>
                 <outlet property="tableView" destination="d8m-5u-Hjz" id="yw2-9V-j62"/>
                 <outlet property="window" destination="371" id="Xdi-ze-5u9"/>
             </connections>
