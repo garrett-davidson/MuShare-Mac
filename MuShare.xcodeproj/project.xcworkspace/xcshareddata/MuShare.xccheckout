@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FF3B3859-40FB-4DA5-ABAC-B8473CD8AD2E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MuShare</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B421B544-C38B-4142-B945-3A2261064B82</key>
+		<string>https://github.com/garrett-davidson/MuShare-Mac.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MuShare.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B421B544-C38B-4142-B945-3A2261064B82</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/garrett-davidson/MuShare-Mac.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B421B544-C38B-4142-B945-3A2261064B82</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B421B544-C38B-4142-B945-3A2261064B82</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MuShare</string>
+		</dict>
+	</array>
+</dict>
+</plist>
